@@ -1,0 +1,101 @@
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Maak het een beetje doorzichtig */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Maak het een beetje doorzichtig voor effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar {
+    background-color: rgba(51, 51, 51, 0.8); /* Maak het een beetje doorzichtig */
+    overflow: hidden; /* Zorgt ervoor dat de links goed worden weergegeven */
+}
+
+.navbar a {
+    float: left; /* Plaats de links naast elkaar */
+    display: block;
+    color: white; /* Kleur van de tekst */
+    text-align: center;
+    padding: 14px 16px; /* Ruimte binnen de links */
+    text-decoration: none; /* Verwijder de onderstreping */
+    transition: background-color 0.3s; /* Voor een soepele overgang */
+}
+
+.navbar a:hover {
+    background-color: #575757; /* Achtergrondkleur bij hover */
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer; /* Wijst de gebruiker dat er iets te klikken is */
+}
+
+.dropdown-content {
+    display: none; /* Verberg het dropdown-menu standaard */
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px; /* Minimale breedte van het dropdown-menu */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Toon het dropdown-menu bij hover */
+}
+
+.dropdown-content a {
+    float: none; /* Zorg ervoor dat de links niet naast elkaar staan */
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    padding: 12px 16px; /* Ruimte binnen de links */
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(201, 200, 200); /* Hover effect voor de dropdown-links */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fallback kleur */
+    background-image: url('https://www.autoscout24.nl/cms-content-assets/4zq2PnvaY4ZAarWT1EaxiG-32afa0c68dc4e924a9e33c421969206a-aston-martin-valkyrie-front-1100.webp'); /* Voeg hier de URL van je afbeelding toe */
+    background-size: cover; /* Zorgt ervoor dat de afbeelding het volledige venster bedekt */
+    background-position: middle; /* Centreert de afbeelding */
+    background-repeat: no-repeat; /* Voorkomt dat de afbeelding herhaald wordt */
+}
