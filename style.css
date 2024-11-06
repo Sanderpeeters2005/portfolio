@@ -94,7 +94,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* Fallback kleur */
-    background-image: url('https://www.autoscout24.nl/cms-content-assets/4zq2PnvaY4ZAarWT1EaxiG-32afa0c68dc4e924a9e33c421969206a-aston-martin-valkyrie-front-1100.webp'); /* Voeg hier de URL van je afbeelding toe */
+    background-image: URL(image.png); /* Voeg hier de URL van je afbeelding toe */
     background-size: cover; /* Zorgt ervoor dat de afbeelding het volledige venster bedekt */
     background-position: middle; /* Centreert de afbeelding */
     background-repeat: no-repeat; /* Voorkomt dat de afbeelding herhaald wordt */
