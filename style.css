@@ -10,8 +10,9 @@ main {
     max-width: 960px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Maak het een beetje doorzichtig voor effect */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(51, 51, 51, 0.8); /* Maak het een beetje doorzichtig voor effect */
+    box-shadow: 0 0 10px rgba(247, 241, 241, 0.1);
+    color: #f4f4f4;
 }
 
 section {
@@ -19,11 +20,12 @@ section {
 }
 
 h2 {
-    color: #333;
+    color: #f1f1f1;
 }
 
 p {
     line-height: 1.6;
+    color:rgb(255, 255, 255)
 }
 
 footer {
@@ -48,7 +50,6 @@ footer {
     text-align: center;
     padding: 14px 16px; /* Ruimte binnen de links */
     text-decoration: none; /* Verwijder de onderstreping */
-    transition: background-color 0.3s; /* Voor een soepele overgang */
 }
 
 .navbar a:hover {
@@ -86,15 +87,16 @@ footer {
 }
 
 .dropdown-content a:hover {
-    background-color: rgb(201, 200, 200); /* Hover effect voor de dropdown-links */
+    background-color: rgb(255, 255, 255); /* Hover effect voor de dropdown-links */
 }
 
 body {
+
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* Fallback kleur */
-    background-image: url('https://www.autoscout24.nl/cms-content-assets/4zq2PnvaY4ZAarWT1EaxiG-32afa0c68dc4e924a9e33c421969206a-aston-martin-valkyrie-front-1100.webp'); /* Voeg hier de URL van je afbeelding toe */
+    background-image: URL(image.png); /* Voeg hier de URL van je afbeelding toe */
     background-size: cover; /* Zorgt ervoor dat de afbeelding het volledige venster bedekt */
     background-position: middle; /* Centreert de afbeelding */
     background-repeat: no-repeat; /* Voorkomt dat de afbeelding herhaald wordt */
