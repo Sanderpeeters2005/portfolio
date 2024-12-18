@@ -1,6 +1,6 @@
 
 header {
-    background-color: rgba(51, 51, 51, 0.8); /* Maak het een beetje doorzichtig */
+    background-color:  #10192D; /* Maak het een beetje doorzichtig */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -10,8 +10,7 @@ main {
     max-width: 960px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(51, 51, 51, 0.8); /* Maak het een beetje doorzichtig voor effect */
-    box-shadow: 0 0 10px rgba(247, 241, 241, 0.1);
+    background-color:  #10192D;
     color: #f4f4f4;
 }
 
@@ -29,7 +28,7 @@ p {
 }
 
 footer {
-    background-color: #333;
+    background-color:  #10192D;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -39,7 +38,7 @@ footer {
 }
 
 .navbar {
-    background-color: rgba(51, 51, 51, 0.8); /* Maak het een beetje doorzichtig */
+    background-color:  #10192D; /* Maak het een beetje doorzichtig */
     overflow: hidden; /* Zorgt ervoor dat de links goed worden weergegeven */
 }
 
@@ -53,41 +52,7 @@ footer {
 }
 
 .navbar a:hover {
-    background-color: #575757; /* Achtergrondkleur bij hover */
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    cursor: pointer; /* Wijst de gebruiker dat er iets te klikken is */
-}
-
-.dropdown-content {
-    display: none; /* Verberg het dropdown-menu standaard */
-    position: absolute;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    min-width: 160px; /* Minimale breedte van het dropdown-menu */
-}
-
-.dropdown:hover .dropdown-content {
-    display: block; /* Toon het dropdown-menu bij hover */
-}
-
-.dropdown-content a {
-    float: none; /* Zorg ervoor dat de links niet naast elkaar staan */
-    color: black;
-    text-decoration: none;
-    text-align: left;
-    padding: 12px 16px; /* Ruimte binnen de links */
-}
-
-.dropdown-content a:hover {
-    background-color: rgb(255, 255, 255); /* Hover effect voor de dropdown-links */
+    background-color: #060469; /* Achtergrondkleur bij hover */
 }
 
 body {
@@ -95,9 +60,43 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Fallback kleur */
+    background-color:  #d2d6e0; /* Fallback kleur */
     background-image: URL(image.png); /* Voeg hier de URL van je afbeelding toe */
     background-size: cover; /* Zorgt ervoor dat de afbeelding het volledige venster bedekt */
     background-position: middle; /* Centreert de afbeelding */
     background-repeat: no-repeat; /* Voorkomt dat de afbeelding herhaald wordt */
+}
+
+
+/* Algemene reset */
+* {
+    margin: 0;
+    padding: 0;
+    height:max-content;
+    width: auto;
+    box-sizing: border-box;
+}
+
+/* Volledige scherm achtergrond voor het laadscherm */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #10192D; /* Donkerblauw */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999; /* Zorg dat het boven alles staat */
+    opacity: 2; /* Start volledig zichtbaar */
+    transition: opacity 1s ease; /* Vloeiende overgang bij verbergen */
+}
+
+/* Verborgen toestand van het laadscherm */
+#loading-screen.hidden {
+    opacity: 0; /* Onzichtbaar maken */
+    pointer-events: none; /* Geblokkeerde interacties */
 }
