@@ -124,3 +124,59 @@ body {
     color: #f4f4f4;
 }
 
+.card {
+    width: 400px;
+    aspect-ratio: 1 / 0.7;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden; /* Zorgt ervoor dat niets buiten de kaart zichtbaar is */
+}
+
+.card .image-box {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.card .image-box img {
+    width: 95%;
+    height: 100%;
+    object-fit: auto; /* Zorgt dat de afbeelding altijd het vak vult */
+    object-position: center; /* Zorgt dat de afbeelding gecentreerd is */
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.card:hover img {
+    filter: grayscale(1) brightness(0.4);
+}
+
+.card:hover::after { 
+    opacity: 1;
+    inset: 25px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    opacity: 0; /* Maak standaard onzichtbaar */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card:hover .content {
+    opacity: 1; /* Maak zichtbaar bij hover */
+}
