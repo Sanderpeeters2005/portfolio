@@ -150,7 +150,7 @@ body {
 
 .card::after {
     content: "";
-    position: absolute;
+    position:absolute;
     inset: 0;
     border: 2px solid white;
     opacity: 0;
