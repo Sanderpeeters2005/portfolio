@@ -136,13 +136,6 @@ body {
     max-width: 300px; /* Stel een maximale breedte in voor consistentie */
 }
 
-.cards-container {
-    display: flex; /* Gebruik Flexbox */
-    flex-wrap: wrap; /* Zorg dat kaarten naar een nieuwe regel gaan als er geen ruimte meer is */
-    justify-content: space-around; /* Zorg voor ruimte tussen de kaarten */
-    gap: 20px; /* Ruimte tussen kaarten */
-    padding: 20px;
-}
 
 .card .image-box {
     width: 100%;
