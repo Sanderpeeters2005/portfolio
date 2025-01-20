@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const loadingScreen = document.getElementById("loading-screen");
 
