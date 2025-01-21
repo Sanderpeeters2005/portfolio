@@ -124,16 +124,28 @@ body {
     color: #f4f4f4;
 }
 
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .card {
-    width: 400px;
-    aspect-ratio: 1 / 0.7;
+    width: calc(33.333% - 20px);
+    min-width: 300px;
+    max-width: 400px;
+    aspect-ratio: 16/12;
     border-radius: 8px;
     position: relative;
     cursor: pointer;
-    overflow: hidden; /* Zorgt ervoor dat niets buiten de kaart zichtbaar is */
-    grid-template-columns: auto;
-    flex: 1 1 calc(33.333% - 40px); /* Zorg dat elke kaart 1/3 van de breedte inneemt (met ruimte tussen kaarten) */
-    max-width: 300px; /* Stel een maximale breedte in voor consistentie */
+    overflow: hidden;
+    margin: 0; /* Remove default margin */
+    text-decoration: none; /* Remove underline from anchor */
+    display: block; /* Make anchor fill the card */
 }
 
 
